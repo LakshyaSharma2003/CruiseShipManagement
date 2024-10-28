@@ -1,0 +1,21 @@
+[debug] [2024-09-27T05:26:33.525Z] ----------------------------------------------------------------------
+[debug] [2024-09-27T05:26:33.530Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lakshya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-27T05:26:33.530Z] CLI Version:   13.19.0
+[debug] [2024-09-27T05:26:33.530Z] Platform:      win32
+[debug] [2024-09-27T05:26:33.531Z] Node Version:  v20.17.0
+[debug] [2024-09-27T05:26:33.531Z] Time:          Fri Sep 27 2024 10:56:33 GMT+0530 (India Standard Time)
+[debug] [2024-09-27T05:26:33.531Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-27T05:26:33.650Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-27T05:26:33.651Z] > authorizing via signed-in user (lakshyashatma@gmail.com)
+[debug] [2024-09-27T05:26:33.651Z] [iam] checking project cruise-ship-management-f8b5e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-27T05:26:33.654Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cruise-ship-management-f8b5e:testIamPermissions [none]
+[debug] [2024-09-27T05:26:33.654Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cruise-ship-management-f8b5e:testIamPermissions x-goog-quota-user=projects/cruise-ship-management-f8b5e
+[debug] [2024-09-27T05:26:33.654Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cruise-ship-management-f8b5e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-27T05:26:33.970Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/cruise-ship-management-f8b5e:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/cruise-ship-management-f8b5e:testIamPermissions failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-09-27T05:26:33.971Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/cruise-ship-management-f8b5e:testIamPermissions
+[debug] [2024-09-27T05:26:33.972Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cruise-ship-management-f8b5e [none]
+[debug] [2024-09-27T05:26:34.194Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/cruise-ship-management-f8b5e, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/cruise-ship-management-f8b5e failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2024-09-27T05:26:34.194Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/cruise-ship-management-f8b5e (original: request to https://firebase.googleapis.com/v1beta1/projects/cruise-ship-management-f8b5e failed, reason: Client network socket disconnected before secure TLS connection was established)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
